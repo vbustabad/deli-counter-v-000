@@ -23,8 +23,7 @@ end
 def now_serving(katz_deli)
   if katz_deli.shift
     "Currently serving #{katz_deli[0]}"
-  elsif condition
-     katz_deli == []
+  else katz_deli == []
     "There is nobody waiting to be served!"
   end
 end
