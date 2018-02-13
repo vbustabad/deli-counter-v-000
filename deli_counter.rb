@@ -17,10 +17,7 @@ def take_a_number(katz_deli, name)
     katz_deli << name
     puts "Welcome, #{name}. You are number 1 in line."
   else katz_deli.length > 0
-    katz_deli.each_with_index do |name, index|
-      line_with_new_customer = "Welcome, #{name}. You are number #{index + 1} in line."
-      list_of_all_customers << line_with_new_customer
-    end
+    katz_deli.push(name)
   end
 end
 
