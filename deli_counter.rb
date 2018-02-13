@@ -5,6 +5,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else katz_deli.length > 0
     counter = 0
+    new_line_of_customers = []
     katz_deli.each_with_index do |name, index|
       new_customer = "The line is currently: #{index + 1}. #{name}"
       counter += 1
