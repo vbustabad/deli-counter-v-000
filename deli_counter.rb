@@ -8,6 +8,7 @@ def line(katz_deli)
     katz_deli.each do |name, index|
       puts "The line is currently: #{index + 1}. #{name}"
       counter += 1
+      new_line =
     end
   end
 end
@@ -26,7 +27,7 @@ def now_serving(katz_deli)
   if katz_deli.length == 0
     puts "There is nobody waiting to be served!"
   else katz_deli.length > 0
-    "Currently serving #{katz_deli[0]}"
+    puts "Currently serving #{katz_deli[0]}"
     katz_deli.shift(katz_deli[0])
   end
 end
