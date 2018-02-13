@@ -11,7 +11,7 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
-  if katz_deli.unshift
+  if katz_deli.length == 0
     "Welcome, #{name}. You are number #{index + 1} in line."
   else katz_deli.push
     katz_deli.each_with_index do |name, index|
