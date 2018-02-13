@@ -5,10 +5,11 @@ def line(katz_deli)
     puts "The line is currently empty."
   else katz_deli.length > 0
     counter = 0
-    katz_deli.each do |name, index|
+    new_line = katz_deli.each_with_index do |name, index|
       puts "The line is currently: #{index + 1}. #{name}"
       counter += 1
     end
+    new_line
   end
 end
 
