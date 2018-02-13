@@ -14,7 +14,7 @@ end
 
 def take_a_number(katz_deli, name)
   if katz_deli.length == 0
-    "Welcome, #{name}. You are number #{index + 1} in line."
+    katz_deli << name
   else katz_deli.length > 0
     katz_deli.each_with_index do |name, index|
       line_with_new_customer = "Welcome, #{name}. You are number #{index + 1} in line."
