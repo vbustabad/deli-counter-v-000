@@ -8,7 +8,7 @@ def line(katz_deli)
     katz_deli.each do |name|
       puts "The line is currently: #{name}"
       counter += 1
-    end 
+    end
   end
 end
 
@@ -17,8 +17,9 @@ def take_a_number(katz_deli, name)
     "Welcome, #{name}. You are number #{index + 1} in line."
   else katz_deli.push
     katz_deli.each_with_index do |name, index|
-    line_with_new_customer = "Welcome, #{name}. You are number #{index + 1} in line."
-    list_of_all_customers << line_with_new_customer
+      line_with_new_customer = "Welcome, #{name}. You are number #{index + 1} in line."
+      list_of_all_customers << line_with_new_customer
+    end
   end
 end
 
